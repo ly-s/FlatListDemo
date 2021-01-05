@@ -1,21 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Flist from './FlatList.js';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>This is the Flatlist Demo</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Flist/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
